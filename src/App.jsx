@@ -5,6 +5,8 @@ import { Hero } from "./components/sections/Hero";
 import { ButtonWhatsapp } from './components/common/ButtonWhatsapp';
 import { TreatmentsSection } from './components/sections/TreatmentsSection';
 import { BenefictsSection } from './components/sections/BenefictsSection';
+import { AutoScrollCarousel } from './components/sections/AutoScrollCarousel';
+import { DoctorCard } from './components/sections/DoctorCard';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <ButtonWhatsapp />
       <TreatmentsSection />
       <BenefictsSection />
+      <AutoScrollCarousel />
+      <DoctorCard />
     </>
   )
 }

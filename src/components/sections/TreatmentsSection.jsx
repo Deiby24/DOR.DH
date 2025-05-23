@@ -48,18 +48,7 @@ export const TreatmentsSection = () => {
             title="Ozone Therapy"
             description="Serum Therapy • Hyperbaric Medicine"
           />
-             <TreatmentCard
-            title="Ozone Therapy"
-            description="Serum Therapy • Hyperbaric Medicine"
-          />
-             <TreatmentCard
-            title="Ozone Therapy"
-            description="Serum Therapy • Hyperbaric Medicine"
-          />
-             <TreatmentCard
-            title="Ozone Therapy"
-            description="Serum Therapy • Hyperbaric Medicine"
-          />
+
         </div>
       </div>
     </section>
