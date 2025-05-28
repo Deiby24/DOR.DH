@@ -62,61 +62,62 @@
 // };
 
 
+import { MdSportsSoccer, MdHealthAndSafety, MdOutlineBackHand } from "react-icons/md";
+
 // src/components/StickySection.tsx
 export const BenefictsSection = () => {
   const items = [
-    { label: "Sports injuries", icon: "/icons/sports.svg" },
-    { label: "Osteoarthritis", icon: "/icons/knee.svg" },
-    { label: "Chronic pain in the knees, hips, or back", icon: "/icons/back.svg" },
-    { label: "Sports injuries", icon: "/icons/sports.svg" },
-    { label: "Osteoarthritis", icon: "/icons/knee.svg" },
-    { label: "Chronic pain in the knees, hips, or back", icon: "/icons/back.svg" },
-    { label: "Sports injuries", icon: "/icons/sports.svg" },
-    { label: "Osteoarthritis", icon: "/icons/knee.svg" },
-    { label: "Chronic pain in the knees, hips, or back", icon: "/icons/back.svg" },
-    { label: "Sports injuries", icon: "/icons/sports.svg" },
-    { label: "Osteoarthritis", icon: "/icons/knee.svg" },
-    { label: "Chronic pain in the knees, hips, or back", icon: "/icons/back.svg" },
+    { label: "Sports injuries", icon: <MdSportsSoccer size={24} /> },
+    { label: "Osteoarthritis", icon: <MdHealthAndSafety size={24} /> },
+    { label: "Chronic pain in the knees, hips, or back", icon: <MdOutlineBackHand size={24} /> },
+    { label: "Sports injuries", icon: <MdSportsSoccer size={24} /> },
+    { label: "Osteoarthritis", icon: <MdHealthAndSafety size={24} /> },
+    { label: "Chronic pain in the knees, hips, or back", icon: <MdOutlineBackHand size={24} /> },
+      { label: "Sports injuries", icon: <MdSportsSoccer size={24} /> },
+    { label: "Osteoarthritis", icon: <MdHealthAndSafety size={24} /> },
+    { label: "Chronic pain in the knees, hips, or back", icon: <MdOutlineBackHand size={24} /> },
+    { label: "Sports injuries", icon: <MdSportsSoccer size={24} /> },
+    { label: "Osteoarthritis", icon: <MdHealthAndSafety size={24} /> },
+    { label: "Chronic pain in the knees, hips, or back", icon: <MdOutlineBackHand size={24} /> },
   ];
 
+
   return (
-    <section className="bg-white py-16 px-4 md:px-8">
+     <section className="bg-white py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1.8fr_1fr] gap-10">
-        
-        {/* Columna Izquierda Fija */}
+
+        {/* Columna Izquierda */}
         <div className="sticky top-50 self-start">
           <div className=" bg-[#f2f9f6] p-8 rounded-xl shadow-md text-center relative">
-            {/* Puntos de navegación */}
             <div className="flex justify-center gap-2 mb-4">
-              {[0,1,2,3,4,5].map((i) => (
+              {[0, 1, 2, 3, 4, 5].map((i) => (
                 <div
                   key={i}
-                  className={`w-5 h-5 rounded-full ${i === 5 ? 'bg-teal-800' : 'bg-teal-300'}`}
+                  className={`w-5 h-5 rounded-full ${i === 5 ? "bg-teal-800" : "bg-teal-300"}`}
                 ></div>
               ))}
             </div>
-            {/* Texto principal */}
             <h2
               className="text-[3.4rem] leading-relaxed text-gray-800 italic"
               style={{
-            fontFamily: 'Georgia, Times, "Times New Roman", serif',
-            fontStyle: 'italic'
-          }}
+                fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                fontStyle: "italic",
+              }}
             >
               Mesenchymal stem cells (MSC) hold great potential for regenerative medicine because of their ability for self-renewal and differentiation into tissue-specific cells.
             </h2>
           </div>
         </div>
 
-        {/* Columna Derecha Scrolleable */}
+        {/* Columna Derecha */}
         <div className="space-y-6">
           <div className="bg-[#f2f9f6] rounded-xl px-6 py-4 shadow-sm">
             <h3
               className="text-3xl font-medium italic text-gray-700 text-center"
-               style={{
-            fontFamily: 'Georgia, Times, "Times New Roman", serif',
-            fontStyle: 'italic'
-          }}
+              style={{
+                fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                fontStyle: "italic",
+              }}
             >
               Who is it indicated for?
             </h3>
@@ -127,21 +128,19 @@ export const BenefictsSection = () => {
               key={index}
               className="flex items-center bg-[#f9fdfc] p-5 rounded-xl shadow-sm hover:shadow-md transition"
             >
-              {/* Imagen a la izquierda */}
-              <img
-                src={item.icon}
-                alt={item.label}
-                className="w-10 h-10 mr-4 object-contain"
-              />
+              {/* Icono */}
+              <div className="w-10 h-10 mr-4 text-teal-800">
+                {item.icon}
+              </div>
 
-              {/* Contenedor de texto con alineación a la derecha */}
+              {/* Texto alineado a la derecha */}
               <div className="flex-1 text-right">
                 <p
                   className="text-teal-800 font-semibold italic text-xl"
-                                 style={{
-            fontFamily: 'Georgia, Times, "Times New Roman", serif',
-            fontStyle: 'italic'
-          }}
+                  style={{
+                    fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                    fontStyle: "italic",
+                  }}
                 >
                   {item.label}
                 </p>

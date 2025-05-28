@@ -1,118 +1,124 @@
 import React from 'react';
+import DocFoto from '../../assets/FOTOFINAL.svg';
+import LogoUdea from '../../assets/LOGOUDEA.png';
+import LogoFucs from '../../assets/LOGOFUCS.svg';
 
 export const DoctorCard = () => {
   return (
-    <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-5xl mx-auto">
-      <div className="flex gap-8">
-        {/* Left Section */}
-        <div className="flex-1">
-          {/* Header */}
-          <div className="mb-6">
-            <h1 className="text-2xl font-bold text-teal-800 italic mb-1">
-              Dr. Diego Hernández Z. M.D. U.de.A.
-            </h1>
+    <div className=" py-12">
+      <div className="max-w-5xl mx-auto bg-[#EAF3EC] border rounded-2xl overflow-hidden flex flex-col md:flex-row">
+        
+        {/* IZQUIERDA - Texto y estilos originales */}
+        <div className="md:w-1/2 p-6 flex flex-col items-center text-center">
+          <div>
+            <p className="text-2xl text-[#1F3D3D]  mb-2"
+                style={{
+                fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                fontStyle: 'italic'
+              }}
+            >
+              Dr. Diego Hernández Z. M.D U.de.A.
+            </p>
           </div>
-
-          {/* Photo Section */}
-          <div className="bg-gradient-to-br from-teal-400 to-teal-600 p-6 rounded-lg mb-6">
-            <div className="w-full h-64 bg-white rounded-lg overflow-hidden">
-              <img 
-                src="../../assets/FOTOFINAL.svg" 
-                alt="Dr. Diego Hernández"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <img
+            className="w-[100%] h-64 object-cover rounded-xl object-top"
+            style={{objectPosition: '0px -45px'}}
+            src={DocFoto}
+            alt="Dr. Diego Hernández"
+          />
+          <div className='text-xl pt-3 w-[100%] text-end'>
+            <p className="italic  text-[#5DA9A6]"
+                      style={{
+              fontFamily: 'Georgia, Times, "Times New Roman", serif',
+              fontStyle: 'italic'
+            }}>
+              Doctor and Surgeon – University of Antioquia
+            </p>
           </div>
+          
+            <div className="flex flex-col md:flex-row">
+      {/* COLUMNA IZQUIERDA - Logos */}
+      <div className="md:w-1/3  p-6 flex flex-col items-center justify-center space-y-6 ">
+        <img
+          src={LogoUdea}
+          alt="Universidad de Antioquia"
+          className="h-16 w-auto object-contain"
+        />
+        <img
+          src={LogoFucs}
+          alt="FUCS"
+          className="h-16 w-auto object-contain"
+        />
+      </div>
 
-          {/* Experience Section */}
-          <div className="text-center">
-            <div className="mb-4">
-              <h2 className="text-teal-700 italic text-lg mb-3">
-                Doctor and Surgeon - University of Antioquia
-              </h2>
-              <div className="text-5xl font-bold text-teal-800 mb-1">23</div>
-              <div className="text-lg italic text-teal-700 mb-4">years of experience.</div>
-            </div>
-            
-            <div className="text-sm text-gray-700 leading-relaxed mb-6">
-              <p className="italic">
-                CEO of Integral Wellness Center (a center for aesthetic and integrative medicine) for 15 years with extensive experience in hyperbaric medicine, aesthetic and anti-aging medicine, ozone therapy, orthomolecular medicine, hormone supplementation, stem cells and exosomes, colon therapy, and detoxification.
-              </p>
-            </div>
+  
+      <div className="md:w-2/3 p-0 text-end">
+                    
+        <div className="text-sm text-gray-700 space-y-2">
 
-            {/* University Logos */}
-            <div className="flex justify-center gap-4">
-              <div className="w-16 h-16 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center shadow-md">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
-                  <span className="text-xs font-bold text-teal-800">UdeA</span>
-                </div>
-              </div>
-              <div className="w-16 h-16 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center shadow-md">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-xs font-bold text-purple-800">CERT</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p className="italic text-[#5DA9A6] text-3xl"
+          style={{
+            fontFamily: 'Georgia, Times, "Times New Roman", serif',
+            fontStyle: 'italic'
+          }}
+          >
+            23 years of experience.
+          </p>
+          <p
+             style={{
+            fontFamily: 'Georgia, Times, "Times New Roman", serif',
+            fontStyle: 'italic'
+          }}
+          >
+            CEO of Integral Wellness Center (a center for aesthetic and integrative medicine)
+            for 15 years with extensive experience in hyperbaric medicine, aesthetic and
+            anti-aging medicine, ozone therapy, orthomolecular medicine, hormone supplementation,
+            stem cells and exosomes, colon therapy, and detoxification.
+          </p>
         </div>
+      </div>
+      </div>
+      </div>
 
-        {/* Right Section */}
-        <div className="flex-1">
-          <div className="mb-6">
-            <h2 className="text-2xl italic text-teal-700 mb-6">Studies at:</h2>
-          </div>
+        
 
-          <div className="space-y-4 text-sm">
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">Integrated Center for Biological Medicine</p>
-                <p className="text-gray-600 italic">(CIMBI)</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">Colombian Scientific Association of Aesthetic Medicine</p>
-                <p className="text-gray-600 italic">(ACOCME)</p>
-                <p className="text-gray-600 italic">(Aesthetic Medicine)</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">Regional Corporation of Higher Education</p>
-                <p className="text-gray-600 italic">(CRES)</p>
-                <p className="text-gray-600 italic">(Ozone Therapy)</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">University Foundation of Health Sciences (FUCS)</p>
-                <p className="text-gray-600 italic">(Integrative and Functional Medicine)</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">University Foundation of Health Sciences (FUCS)</p>
-                <p className="text-gray-600 italic">(Seminar on regenerative medicine and use of biological medications)</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-semibold text-gray-800 italic">The Bosque University</p>
-                <p className="text-gray-600 italic">(Homotoxicology)</p>
-              </div>
-            </div>
-          </div>
+        {/* DERECHA - Estilos como la imagen pero con TODO el texto original */}
+        <div className="md:w-1/2 p-6 border-t md:border-t-0 md:border-l border-gray-200">
+          <h4 className="text-2xl  text-[#5DA9A6] mb-4" 
+              style={{
+                fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                fontStyle: 'italic'
+              }} 
+          >
+            Studies at:
+          </h4>
+          <ul className="text-gray-700 space-y-3 text-[15px]" 
+              style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}> {/* Estilo como la imagen */}
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>Integrated Center for Biological Medicine (CIMEBI)</span>
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>Colombian Scientific Association of Aesthetic (ACICME)<br />(Aesthetic Medicine)</span>
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>Regional Corporation of Higher Education (CRES)<br />(Ozone Therapy)</span>
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>University Foundation of Health Sciences (FUCS)<br />(Integrative and Functional Medicine)</span>
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>University Foundation of Health Sciences (FUCS)<br />(Seminar on regenerative medicine and use of biological medications)</span>
+            </li>
+            <li className="flex items-baseline gap-2">
+              <span className="text-green-800 text-2xl pt-[2px] leading-[1.2]">•</span>
+              <span className='text-xl text-800'>The Bosque University<br />(Homotoxicology)</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

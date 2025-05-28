@@ -7,7 +7,8 @@ import { TreatmentsSection } from './components/sections/TreatmentsSection';
 import { BenefictsSection } from './components/sections/BenefictsSection';
 import { AutoScrollCarousel } from './components/sections/AutoScrollCarousel';
 import { DoctorCard } from './components/sections/DoctorCard';
-
+import { TestimonialSection } from './components/sections/TestimonialSection';
+import { FaqSection } from './components/sections/FaqSection';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,8 @@ function App() {
       <BenefictsSection />
       <AutoScrollCarousel />
       <DoctorCard />
+      <TestimonialSection/>
+      <FaqSection />
     </>
   )
 }
