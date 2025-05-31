@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+.custom-bullets li::marker {
+  font-size: 1.5em; /* Aumenta el tamaño */
+  color: #4B5563;   /* (opcional) gris Tailwind */
+}
