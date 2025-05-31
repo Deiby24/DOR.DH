@@ -4,24 +4,29 @@ import { motion } from "framer-motion";
 const images = [
   '/src/assets/CELULAS-05.svg',
   '/src/assets/CELULAS-04.svg',
-  '/src/assets/CELULAS-05.svg',
-  '/src/assets/CELULAS-04.svg',
-  '/src/assets/CELULAS-05.svg',
+  '/src/assets/ADN2.png',
+  '/src/assets/CELULA02.png',
 ];
 
 export const AutoScrollCarousel = () => {
   const scrollRef = useRef(null);
-  const [speed, setSpeed] = useState(1); // velocidad inicial
+  const [speed, setSpeed] = useState(1);
   const animationRef = useRef();
+  const [isHovered, setIsHovered] = useState(false);
 
-  // Reemplazo de useAnimationFrame con requestAnimationFrame nativo
+  // Duplicamos las imágenes múltiples veces para crear el efecto infinito
+  const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images];
+
   useEffect(() => {
     const animate = () => {
-      if (scrollRef.current) {
-        scrollRef.current.scrollLeft += speed;
+      if (scrollRef.current && !isHovered) {
+        const container = scrollRef.current;
+        container.scrollLeft += speed;
         
-        if (scrollRef.current.scrollLeft >= scrollRef.current.scrollWidth / 2) {
-          scrollRef.current.scrollLeft = 0;
+        // Cuando llegamos a la mitad del contenido duplicado, volvemos al inicio
+        const maxScroll = container.scrollWidth / 2;
+        if (container.scrollLeft >= maxScroll) {
+          container.scrollLeft = 0;
         }
       }
       animationRef.current = requestAnimationFrame(animate);
@@ -34,26 +39,50 @@ export const AutoScrollCarousel = () => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [speed]);
+  }, [speed, isHovered]);
+
+
 
   return (
-    <div
-      ref={scrollRef}
-      className="overflow-hidden whitespace-nowrap scroll-smooth select-none"
-      onMouseEnter={() => setSpeed(0)}    // cuando entra el mouse, pausa el scroll
-      onMouseLeave={() => setSpeed(1)}    // cuando sale el mouse, vuelve a la velocidad original
-    >
-      {[...images, ...images].map((src, i) => (
-        <motion.img
-          key={i}
-          src={src}
-          alt={`carousel-img-${i}`}
-          className="inline-block w-110 h-70 object-cover mx-2 shadow-lg"
-          draggable={false}
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-        />
-      ))}
+    <div className="w-full overflow-hidden  py-8">
+      <div
+        ref={scrollRef}
+        className="flex overflow-hidden whitespace-nowrap select-none"
+        style={{ 
+          scrollbarWidth: 'none', 
+          msOverflowStyle: 'none',
+          WebkitScrollbar: { display: 'none' }
+        }}
+
+
+      >
+        {duplicatedImages.map((src, i) => (
+          <motion.div
+            key={i}
+            className="flex-shrink-0 mx-4"
+            whileHover={{ 
+              scale: 1.1,
+              rotateY: 10,
+              z: 50
+            }}
+            transition={{ 
+              duration: 0.3,
+              type: "spring",
+              stiffness: 300
+            }}
+          >
+            <img
+              src={src}
+              alt={`carousel-img-${i}`}
+              className="w-90 h-70 object-cover rounded-2xl  duration-300"
+              draggable={false}
+            />
+          </motion.div>
+        ))}
+      </div>
+      
+      {/* Indicador de velocidad */}
+
     </div>
   );
-}
+};
