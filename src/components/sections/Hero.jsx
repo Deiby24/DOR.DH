@@ -1,4 +1,4 @@
-import CELULAMADRE from '../../assets/celulamadre.svg';
+import CELULAMADRE from '../../assets/CELULAMADRE.svg';
 
 export const Hero = () => {
   return (
