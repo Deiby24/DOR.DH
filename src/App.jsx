@@ -1,33 +1,72 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Fondo from "../src/assets/GALAXIA.svg";
+import  Navbar  from './components/layout/Navbar';
+import { Hero } from "./components/sections/Hero";
+import { ButtonWhatsapp } from './components/common/ButtonWhatsapp';
+import { TreatmentsSection } from './components/sections/TreatmentsSection';
+import { BenefictsSection } from './components/sections/BenefictsSection';
+import { AutoScrollCarousel } from './components/sections/AutoScrollCarousel';
+import { DoctorCard } from './components/sections/DoctorCard';
+import { TestimonialSection } from './components/sections/TestimonialSection';
+import { FaqSection } from './components/sections/FaqSection';
+import { ContactUs } from './components/sections/ContactUs';
+import { Footer } from './components/layout/Footer';
+import { AdvantagesSection } from './components/sections/AdvantagesSection';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      
+      {/* HOME SECTION */}
+      <section id="home">
+        <Hero />
+      </section>
+      
+      <ButtonWhatsapp />
+      
+      {/* SERVICES SECTION */}
+      <section id="services">
+        <TreatmentsSection />
+      </section>
+      
+      {/* MEDICAL APPLICATIONS SECTION */}
+      <section id="medical-applications">
+        <BenefictsSection />
+        <AutoScrollCarousel />
+      </section>
+      
+      {/* ABOUT US SECTION */}
+      <section id="about-us">
+        <DoctorCard />
+        <AdvantagesSection />
+      </section>
+      
+      {/* TESTIMONIES SECTION */}
+      <section id="testimonies">
+        <TestimonialSection/>
+      </section>
+      
+      {/* FAQ SECTION */}
+      <section id="faq">
+        {/* <FaqSection /> */}
+        {/* Puedes descomentar cuando esté listo */}
+      </section>
+      
+      {/* CONTACT SECTION */}
+      <section id="contact" className='relative'>
+        <div 
+          className="absolute inset-0 opacity-10 bg-cover"
+          style={{
+            backgroundImage: `url(${Fondo})`,
+          }}
+        />
+        <ContactUs/>
+        <Footer />
+      </section>
     </>
   )
 }
