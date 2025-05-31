@@ -176,7 +176,7 @@ export const ContactUs = () => {
             
             <div className="flex justify-center gap-4">
               <a 
-                href="#" 
+                href="https://api.whatsapp.com/send/?phone=3117970832&text=How+may+we+help+you%3F&type=phone_number&app_absent=0" 
                 aria-label="WhatsApp"
                 className="p-3 rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg"
                 style={{ backgroundColor: '#263238', color: 'white' }}

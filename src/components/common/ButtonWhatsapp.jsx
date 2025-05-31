@@ -1,7 +1,7 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
 export const ButtonWhatsapp = () => {
-  const phoneNumber = '1234567890';
+  const phoneNumber = '3117970832'; // Número de WhatsApp sin el prefijo internacional
   const message = 'How may we help you?';
 
   const handleClick = () => {
