@@ -1,12 +1,18 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+import celulas05 from '../../assets/CELULAS-05.svg';
+import celulas04 from '../../assets/CELULAS-04.svg';
+import adn2 from '../../assets/ADN2.png';
+import celula02 from '../../assets/CELULA02.png';
+
 const images = [
-  '/src/assets/CELULAS-05.svg',
-  '/src/assets/CELULAS-04.svg',
-  '/src/assets/ADN2.png',
-  '/src/assets/CELULA02.png',
+  celulas05,
+  celulas04,
+  adn2,
+  celula02,
 ];
+
 
 export const AutoScrollCarousel = () => {
   const scrollRef = useRef(null);
