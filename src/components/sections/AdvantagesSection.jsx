@@ -27,7 +27,7 @@ export const AdvantagesSection = () => {
         {/* Three cards - Responsive grid and spacing */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8 max-w-10xl mx-auto">
           {/* Facilities Card */}
-          <div className="bg-[#F5FCF6]/60 rounded-lg px-7 sm:px-8 md:px-8 lg:px-8 py-3 sm:py-3 md:py-3 lg:py-3 text-center md:col-span-2 lg:col-span-1">
+          <div className="bg-[#F5FCF6]/60 rounded-lg px-6 sm:px-6 md:px-6 lg:px-4 py-3 sm:py-3 md:py-3 lg:py-3 text-center md:col-span-2 lg:col-span-1">
             <h3 className="text-[#33585E] text-3xl sm:text-5xl md:text-3xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
                                           style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
