@@ -89,7 +89,7 @@ export const ContactUs = () => {
             for you
           </h2>
           <p 
-            className="text-[1.3rem] md:text-2xl  mb-6 text-center"
+            className="text-[1.3rem] md:text-2xl mb-6 text-center"
             style={{ 
               color: '#3B5959',
               fontFamily: 'Georgia, serif'
@@ -285,6 +285,7 @@ export const ContactUs = () => {
               <a 
                 href="https://api.whatsapp.com/send/?phone=3117970832&text=How+may+we+help+you%3F&type=phone_number&app_absent=0" 
                 aria-label="WhatsApp"
+                target="_blank"
                 className="p-3 rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg"
                 style={{ backgroundColor: '#263238', color: 'white' }}
               >
@@ -293,6 +294,7 @@ export const ContactUs = () => {
               <a 
                 href="https://www.facebook.com/share/18Qe6fXF3b/?mibextid=wwXIfr" 
                 aria-label="Facebook"
+                target="_blank"
                 className="p-3 rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg"
                 style={{ backgroundColor: '#263238', color: 'white' }}
               >
@@ -300,6 +302,7 @@ export const ContactUs = () => {
               </a>
               <a 
                 href="https://www.instagram.com/drdiegohernandez?igsh=NDk5dHpwZWRqazhw" 
+                target="_blank"
                 aria-label="Instagram"
                 className="p-3 rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg"
                 style={{ backgroundColor: '#263238', color: 'white' }}
