@@ -43,8 +43,8 @@ export const Hero = () => {
       </h2>
 
       {/* Description */}
-      <p className="italic text-[#5DA9A6] mt-4 max-w-[30rem] sm:max-w-[30rem] md:max-w-[33rem] lg:max-w-[45rem] xl:max-w-[45rem] 2xl:max-w-4xl
-                    text-[0.8rem]
+      <p className="italic text-[#5DA9A6] mt-4 max-w-[18rem] sm:max-w-[30rem] md:max-w-[33rem] lg:max-w-[45rem] xl:max-w-[45rem] 2xl:max-w-4xl
+                    text-[0.6rem]
                     sm:text-base 
                     md:text-lg 
                     lg:text-2xl 
@@ -81,12 +81,12 @@ export const Hero = () => {
       <img
         src={CELULAMADRE}
         alt="background blur"
-        className="absolute pointer-events-none opacity-50 z-10
+        className="absolute pointer-events-none opacity-20 z-10
                    w-[40%] -left-[15%] -bottom-[18%]
                    sm:w-[40%] sm:-left-[12%] sm:-bottom-[15%]
                    md:w-[42%] md:-left-[11%] md:-bottom-[22%]
-                   lg:w-[37%] lg:-left-[10%] lg:-bottom-[25%]
-                   xl:w-[40%] xl:-left-[10%] xl:-bottom-[34%]
+                   lg:w-[37%] lg:-left-[10%] lg:-bottom-[20%]
+                   xl:w-[40%] xl:-left-[10%] xl:-bottom-[27%]
                    2xl:w-[35%] 2xl:-left-[10%] 2xl:-bottom-[29%]"
       />
     </section>

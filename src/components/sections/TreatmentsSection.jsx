@@ -12,13 +12,9 @@ export const TreatmentsSection = () => {
         style={{
           backgroundImage: `url(${adng})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-
+          backgroundPosition:'top'
         }}
     >
-
-
-
       <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col">
         
         <h2 className="text-[#1F3D3D] text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12
