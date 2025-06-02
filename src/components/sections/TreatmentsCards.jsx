@@ -6,7 +6,16 @@ const TreatmentCard = ({ title, description }) => {
       {/* Contenido del card */}
       <div className="relative z-10">
         <h3
-          className="text-4xl md:text-4xl  text-[#1F3D3D] mb-2"
+          className="
+          text-2xl 
+          sm:text-xl
+          md:text-1xl
+          lg:text-2xl
+          xl:text-3xl
+          2xl:text-4xl  
+          
+          
+          text-[#1F3D3D] mb-2"
           style={{
             fontFamily: 'Georgia, Times, "Times New Roman", serif',
             fontStyle: 'italic'

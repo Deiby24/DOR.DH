@@ -59,28 +59,28 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar - Tu diseño original */}
-      <nav className="hidden md:flex w-full items-center py-5 z-50 fixed top-0 left-0 justify-around">
+      {/* Desktop Navbar - Versión ligeramente más compacta */}
+      <nav className="hidden lg:flex w-full items-center py-2.5 z-50 fixed top-0 left-0 justify-around">
         {/* Logo */}
-        <div className="flex items-center gap-4 pl-25">
-          <img src={LOGOSITIO} alt="Logo" className="h-35" />
+        <div className="flex items-center gap-3 pl-12 md:pl-0 lg:pl 12 xl:pl-12">
+          <img src={LOGOSITIO} alt="Logo" className="h-24" />
         </div>
 
-        {/* Menu Items */}
+        {/* Menu Items - Ligeramente más compacto */}
         <div 
-          className="flex gap-3 flex-wrap justify-center bg-white/85 shadow-lg px-9 py-7 rounded-3xl"
+          className="flex gap-1.5 flex-wrap justify-center bg-white/85 shadow-lg px-5 py-3 rounded-3xl"
           style={{   
             fontFamily: 'Georgia, Times, "Times New Roman", serif',
             fontWeight: 500, 
             fontStyle: 'normal',
-            letterSpacing: '0.1em'
+            letterSpacing: '0.08em'
           }}
         >
           {menuItems.map((item, i) => (
             <button
               key={i}
               onClick={() => scrollToSection(item.id)}
-              className={`px-4 py-1 rounded-md text-white text-base cursor-pointer ${
+              className={`px-2.5 py-1.5 rounded-md text-white 2xl:text-base xl:text-base lg:text-base   cursor-pointer ${
                 activeSection === item.id
                   ? 'bg-[#1F3D3D] font-bold'
                   : 'bg-[#5AA8A2] hover:bg-[#417F7C]'
@@ -93,10 +93,10 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar - Estilo simple como en la imagen */}
-      <nav className="md:hidden w-full flex items-center justify-between px-4 py-3 z-50 fixed top-0 left-0 bg-white shadow-md">
+      <nav className="lg:hidden w-full flex items-center justify-between px-4 py-3 z-50 fixed top-0 left-0 bg-white shadow-md">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={LOGOSITIO} alt="Logo" className="h-8" />
+          <img src={LOGOSITIO} alt="Logo" className="h-15 w-20 absolute" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -114,7 +114,7 @@ const Navbar = () => {
 
       {/* Mobile Sidebar Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-40 flex flex-col md:hidden">
+        <div className="fixed inset-0 bg-white z-40 flex flex-col lg:hidden">
           {/* Header con logo y botón cerrar */}
           <div className="flex justify-between items-center p-4 border-b border-gray-300">
             <img src={LOGOSITIO} alt="Logo" className="h-8" />
@@ -152,7 +152,7 @@ const Navbar = () => {
               className={`mt-6 w-full py-3 rounded-lg font-semibold text-sm cursor-pointer transition duration-300 ${
                 activeSection === 'contact'
                   ? 'bg-[#1F3D3D] text-white'
-                  : 'bg-[#8AA88C] hover:bg-[#6e906f] text-white'
+                  : 'bg-[#5AA8A2] hover:bg-[#1F3D3D] text-white'
               }`}
             >
               Request an appointment

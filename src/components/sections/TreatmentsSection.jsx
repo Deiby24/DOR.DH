@@ -1,25 +1,31 @@
 import TreatmentCard from './TreatmentsCards';
-import adng from '../../assets/adng.gif';
+import adng from '../../assets/Dise.gif';
 
 export const TreatmentsSection = () => {
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center z-10
-                        py-12 px-4 
+                        py-12 px-10 
                         sm:py-16 sm:px-6 
                         md:py-20 md:px-8 
                         lg:py-24 
                         xl:py-28"
-      style={{
-        // backgroundImage: `url(${adng})`,
-        // backgroundSize: "cover",
-        // backgroundPosition: "center",
-        // backgroundRepeat: "no-repeat",
-      }}
+      
     >
-      <div className="max-w-7xl w-full justify-center items-center flex flex-col">
+
+      {/* <div 
+        className="relative top-0 left-0 w-full h-full z-12"
+        style={{
+          backgroundImage: `url(${adng})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.1,
+        }}>
+
+      </div> */}
+      <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col">
         
         <h2 className="text-[#1F3D3D] text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12
-                       text-2xl 
+                       text-[1.2rem] 
                        sm:text-3xl 
                        md:text-4xl 
                        lg:text-5xl 
@@ -34,22 +40,30 @@ export const TreatmentsSection = () => {
           <span className="flex justify-center items-center gap-2 sm:gap-3 md:gap-4 flex-wrap">
             <div
               className="rounded-full z-20 flex-shrink-0
-                         w-4 h-4 
-                         sm:w-5 sm:h-5 
-                         md:w-6 md:h-6 
-                         lg:w-7 lg:h-7"
+                         w-2 h-2 
+                         sm:w-3 sm:h-3 
+                         md:w-4 md:h-4 
+                         lg:w-5 lg:h-5"
               style={{ backgroundColor: '#86D2C9' }}
             />
-            <span className="leading-tight">What is Regenerative Medicine?</span>
+            <span className="leading-tight text-[#1F3D3D]" >What is Regenerative Medicine?</span>
+            <div
+              className="rounded-full z-20 flex-shrink-0
+                        w-2 h-2 
+                         sm:w-3 sm:h-3 
+                         md:w-4 md:h-4 
+                         lg:w-5 lg:h-5"
+              style={{ backgroundColor: '#86D2C9' }}
+            />
           </span>
         </h2>
 
         <p className="italic text-[#5DA9A6] text-center leading-relaxed mb-8 sm:mb-10 md:mb-12 lg:mb-16
-                      text-sm max-w-sm
-                      sm:text-base sm:max-w-md
-                      md:text-lg md:max-w-2xl
-                      lg:text-xl lg:max-w-4xl
-                      xl:text-2xl xl:max-w-5xl"
+                      
+                      sm:text-md sm:max-w-md
+                      md:text-lg md:max-w-[53rem]
+                      lg:text-xl lg:max-w-[58rem]
+                      xl:text-2xl xl:max-w-[69rem]"
            style={{
              fontFamily: 'Georgia, Times, "Times New Roman", serif',
              fontStyle: 'italic'
@@ -59,13 +73,16 @@ export const TreatmentsSection = () => {
 
         <div className="w-full
                         grid grid-cols-1 gap-4
-                        sm:grid-cols-2 sm:gap-6
+                        sm:grid-cols-1 sm:gap-4
                         md:grid-cols-2 md:gap-6
                         lg:grid-cols-3 lg:gap-8
-                        xl:gap-10">
+                        xl:gap-10
+                        ">
           <TreatmentCard
             title="Exosomes"
-            description="Exosome therapies for cell regeneration. Aesthetic, orthopedic, and neurological applications."
+            description="Exosome therapies for cell regeneration. Aesthetic, orthopedic, and neurological applications.
+            text-sm
+            "
           />
           <TreatmentCard
             title="Stem Cell Therapy"

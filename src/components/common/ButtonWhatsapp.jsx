@@ -17,7 +17,7 @@ export const ButtonWhatsapp = () => {
                    lg:h-80 lg:w-12
                    xl:h-80 lg:w-12
                    md:h-72 md:w-11
-                   sm:h-48 sm:w-8
+                   sm:h-60 sm:w-8
                    xs:h-40 xs:w-7'
         onClick={handleClick}
       >  
@@ -47,7 +47,7 @@ export const ButtonWhatsapp = () => {
                      w-8 h-8
                      lg:w-8 lg:h-8
                      md:w-7 md:h-7
-                     sm:w-5 sm:h-5
+                     sm:w-5 sm:h-9
                      xs:w-4 xs:h-4" 
         />
       </div> 

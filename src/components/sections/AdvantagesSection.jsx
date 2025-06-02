@@ -3,7 +3,7 @@ import CELULA from '../../assets/CELULA-06.svg';
 
 export const AdvantagesSection = () => {
   return (
-    <section className="relative  pb-8 sm:pb-12 md:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden ">
+    <section className="relative  pb-8 sm:pb-12 md:pb-16 lg:pb-20 px-10 sm:px-10 lg:px-8 overflow-hidden ">
       {/* Background decorative elements - responsive positioning */}
 <div className="absolute right-0 top-0 w-full h-full pointer-events-none">
   <img
@@ -28,7 +28,7 @@ export const AdvantagesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
           {/* Facilities Card */}
           <div className="bg-[#F5FCF6]/60 rounded-lg  p-6 sm:p-8 md:p-8 lg:p-10 text-center md:col-span-2 lg:col-span-1">
-            <h3 className="text-[#33585E] text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
+            <h3 className="text-[#33585E] text-3xl sm:text-5xl md:text-3xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
                                           style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
               fontStyle: 'italic'
@@ -36,19 +36,19 @@ export const AdvantagesSection = () => {
             >
               Facilities
             </h3>
-            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-xl"
+            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-xl"
                                               style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
               fontStyle: 'italic'
             }}
             >
-              <p>We are located in the most</p>
+              <p>We are located in the most </p>
               <p>exclusive area of Medellín.</p>
               <p className="pt-2">Modern and relaxing reception.</p>
               <p className="pt-2">Individual treatment rooms for privacy.</p>
               <p className="pt-2">Partnerships with certified external</p>
-              <p>laboratories for PRP and</p>
-              <p>stem cell preparation.</p>
+              <p>laboratories for PRP</p>
+              <p>and stem cell preparation.</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export const AdvantagesSection = () => {
             >
               Medical Team
             </h3>
-            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-xl"
+            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-xl"
                                               style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
               fontStyle: 'italic'
@@ -71,10 +71,8 @@ export const AdvantagesSection = () => {
               <p>Physicians with experience in</p>
               <p>regenerative medicine</p>
               <p>and aesthetic medicine.</p>
-              <p className="pt-2">Nursing staff trained in intravenous</p>
-              <p>therapy, PRP management, and</p>
-              <p>assistance with regenerative</p>
-              <p>medicine procedures.</p>
+              <p className="pt-2">Nursing staff trained in intravenous therapy, PRP management, and assistance with regenerative medicine procedures.</p>
+
             </div>
           </div>
 
@@ -88,7 +86,7 @@ export const AdvantagesSection = () => {
             >
               Access to<br />Advanced<br />Therapies.
             </h3>
-            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-xl"
+            <div className="text-[#33585E]  italic text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-xl"
                                               style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
               fontStyle: 'italic'

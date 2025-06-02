@@ -25,7 +25,7 @@ export const BenefictsSection = () => {
 
   return (
     <section className="bg-white relative
-                        py-8 px-4
+                        py-8 px-10
                         sm:py-12 sm:px-6
                         md:py-16 md:px-8
                         lg:py-20
@@ -38,13 +38,13 @@ export const BenefictsSection = () => {
         }}
       />
       
-      <div className="max-w-7xl mx-auto relative z-10
+      <div className="max-w-7xl sm:max-w-xl md:max-w-2xl lg:max-w-[60rem] xl:max-w-6xl 2xl:max-w-7xl mx-auto relative z-10
                       grid grid-cols-1 gap-6
-                      lg:grid-cols-[1.7fr_0.9fr] lg:gap-10
+                      lg:grid-cols-[1.5fr_0.9fr] lg:gap-10
                       xl:gap-12">
       
         {/* Columna Izquierda - Sticky Card */}
-        <div className="xl:sticky 2xl:top-60  lg:top-40  lg:self-start">
+        <div className="lg:sticky 2xl:top-25 xl:top-30 lg:top-28 md:top-30 sm:top-20  lg:self-start">
           <div className="p-4 sm:p-6 md:p-8 rounded-xl shadow-md text-center relative" 
                style={{ backgroundColor: "rgba(224, 245, 218, 0.49)" }}>
             
@@ -64,18 +64,46 @@ export const BenefictsSection = () => {
             </div>
             
             {/* Título principal */}
-            <h2 className="text-[#34585C] italic leading-tight
-                           text-lg
+            <h2 className="text-[#34585C] italic 
+                           text-xl
                            sm:text-xl
                            md:text-2xl
-                           lg:text-3xl
+                           lg:text-4xl
                            xl:text-4xl
-                           2xl:text-[3.4rem]"
+                           2xl:text-[3.3rem]"
                 style={{
                   fontFamily: 'Georgia, Times, "Times New Roman", serif',
                   fontStyle: "italic",
                 }}>
-              Mesenchymal stem cells (MSC) hold great potential for regenerative medicine because of their ability for self-renewal and differentiation into tissue-specific cells.
+              Mesenchymal stem cells  
+            </h2>
+            <br className="hidden" />
+             <h2 className="text-[#34585C] italic
+                           text-xl
+                           sm:text-xl
+                           md:text-2xl
+                           lg:text-4xl
+                           xl:text-4xl
+                           2xl:text-[3.3rem]"
+                style={{
+                  fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                  fontStyle: "italic",
+                }}>
+             (MSC) hold great
+            </h2>
+            <br className="hidden" />
+             <h2 className="text-[#34585C] italic 
+                           text-xl
+                           sm:text-xl
+                           md:text-2xl
+                           lg:text-4xl
+                           xl:text-4xl
+                           2xl:text-[3.3rem]"
+                style={{
+                  fontFamily: 'Georgia, Times, "Times New Roman", serif',
+                  fontStyle: "italic",
+                }}>
+             potential for regenerative medicine because of their ability for self-renewal and differentiation into tissue-specific cells.
             </h2>
             
             {/* Círculos inferiores */}
@@ -99,11 +127,15 @@ export const BenefictsSection = () => {
         <div className="space-y-4 sm:space-y-6">
           
           {/* Header */}
-          <div className="bg-[#F3F9F5] rounded-xl px-4 py-4 sm:px-6 sm:py-6 shadow-sm">
-            <h3 className="font-medium italic text-gray-700 text-right
-                           text-xl
-                           sm:text-2xl
-                           md:text-3xl"
+          <div className="bg-[#e0f5da7d] rounded-xl px-4 py-4 sm:px-6 sm:py-6 shadow-sm">
+            <h3 className="font-medium italic text-gray-700 text-center
+                           text-xl 
+                           sm:text-2xl sm:text-center
+                           md:text-3xl md:text-center
+                           lg:text-2xl lg:text-right
+                           xl:text-3xl xl:text-right
+                           2xl:text-4xl 2xl:text-right"
+
                 style={{
                   fontFamily: 'Georgia, Times, "Times New Roman", serif',
                   fontStyle: "italic",
@@ -116,7 +148,7 @@ export const BenefictsSection = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="flex items-center bg-[#F3F9F5] rounded-xl shadow-sm hover:shadow-md transition-shadow
+              className="flex items-center bg-[#e0f5da7d]/80 rounded-xl shadow-sm hover:shadow-md transition-shadow
                          p-2 gap-2
                          sm:p-3 sm:gap-3
                          md:gap-4">

@@ -80,7 +80,7 @@ export const AutoScrollCarousel = () => {
             <img
               src={src}
               alt={`carousel-img-${i}`}
-              className="w-90 h-70 object-cover rounded-2xl  duration-300"
+              className="w-40 h-40 lg:w-90 lg:h-70 bg-[#EFF9EC] object-cover rounded-2xl  duration-300"
               draggable={false}
             />
           </motion.div>

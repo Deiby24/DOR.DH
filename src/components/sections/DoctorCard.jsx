@@ -6,7 +6,7 @@ import LogoFucs from '../../assets/LOGOFUCS.svg';
 export const DoctorCard = () => {
   return (
     <div className="py-6 md:py-12 px-4 md:px-0">
-      <div className="max-w-5xl mx-auto bg-[#EAF3EC] border rounded-2xl overflow-hidden flex flex-col md:flex-row">
+      <div className="max-w-[34rem] md:max-w-3xl lg:max-w-5xl sm:max-w-[42rem] mx-auto bg-[#EAF3EC] border rounded-2xl overflow-hidden flex flex-col md:flex-row">
         
         {/* IZQUIERDA - Texto y estilos originales */}
         <div className="md:w-1/2 p-4 md:p-6 flex flex-col items-center text-center">
@@ -21,12 +21,12 @@ export const DoctorCard = () => {
             </p>
           </div>
           <img
-            className="w-[100%] h-48 md:h-64 object-cover rounded-xl object-top"
-            style={{objectPosition: '0px -100px'}}
+            className="w-[100%] h-84 sm:h-115  md:h-84 object-cover rounded-xl object-top"
+            
             src={DocFoto}
             alt="Dr. Diego Hernández"
           />
-          <div className='text-lg md:text-xl pt-3 w-[100%] text-end'>
+          <div className='text-lg md:text-xl pt-3 w-[100%] text-center lg:text-end'>
             <p className="italic text-[#5DA9A6]"
                       style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
@@ -42,12 +42,12 @@ export const DoctorCard = () => {
         <img
           src={LogoUdea}
           alt="Universidad de Antioquia"
-          className="h-12 md:h-16 w-auto object-contain"
+          className="h-25 md:h-22 w-auto object-contain"
         />
         <img
           src={LogoFucs}
           alt="FUCS"
-          className="h-12 md:h-16 w-auto object-contain"
+          className="h-20 md:h-22 w-auto object-contain"
         />
       </div>
 
@@ -83,8 +83,8 @@ export const DoctorCard = () => {
         
 
         {/* DERECHA - Estilos como la imagen pero con TODO el texto original */}
-        <div className="md:w-1/2 p-4 md:p-6 border-t md:border-t-0 md:border-l border-gray-200">
-          <h4 className="text-xl md:text-2xl text-[#5DA9A6] mb-4" 
+        <div className="md:w-1/2 p-4 md:p-6 border-t md:border-t-0 md:border-l border-gray-200 ">
+          <h4 className="text-xl md:text-2xl text-[#5DA9A6] mb-4 text-center sm:text-center md:text-left" 
               style={{
                 fontFamily: 'Georgia, Times, "Times New Roman", serif',
                 fontStyle: 'italic'
