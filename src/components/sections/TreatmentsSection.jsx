@@ -91,15 +91,15 @@ Aesthetic, orthopedic, and
 neurological applications."
           />
           <TreatmentCard
-            title="Platelet-Rich Plasma (PRP)"
+           title={<>Platelet-Rich <br />Plasma (PRP)</>}
             description="Aesthetic PRP (facial, hair).
 Orthopedic PRP for muscle and joint injuries."
           />
           <TreatmentCard
             title="Ozone Therapy"
-            description="Ten-pass.
-Major autohemotherapy.
-Local injections for pain and inflammation."
+            description={<>Ten-pass. <br />
+Major autohemotherapy. <br />
+Local injections for pain and inflammation.</>}
           />
           <TreatmentCard
             title="Serum Therapy"
