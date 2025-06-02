@@ -84,7 +84,7 @@ export const Hero = () => {
         className="absolute pointer-events-none opacity-50 z-10
                    w-[40%] -left-[15%] -bottom-[18%]
                    sm:w-[40%] sm:-left-[12%] sm:-bottom-[15%]
-                   md:w-[42%] md:-left-[11%] md:-bottom-[29%]
+                   md:w-[42%] md:-left-[11%] md:-bottom-[22%]
                    lg:w-[37%] lg:-left-[10%] lg:-bottom-[25%]
                    xl:w-[40%] xl:-left-[10%] xl:-bottom-[34%]
                    2xl:w-[35%] 2xl:-left-[10%] 2xl:-bottom-[29%]"

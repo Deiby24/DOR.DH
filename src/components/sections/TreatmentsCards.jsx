@@ -1,6 +1,6 @@
 const TreatmentCard = ({ title, description }) => {
   return (
-    <div className="relative bg-[#EAF3EC] rounded-xl p-6 shadow-md flex flex-col items-center justify-center text-center overflow-hidden min-h-[220px]">
+    <div className="relative bg-[#EAF3EC]/30 rounded-xl p-6 shadow-md flex flex-col items-center justify-center text-center overflow-hidden min-h-[220px]">
       {/* Imagen de fondo translúcida */}
 
       {/* Contenido del card */}

@@ -1,5 +1,5 @@
 import TreatmentCard from './TreatmentsCards';
-import adng from '../../assets/Dise.gif';
+import adng from '../../assets/ADN.svg';
 
 export const TreatmentsSection = () => {
   return (
@@ -9,23 +9,20 @@ export const TreatmentsSection = () => {
                         md:py-20 md:px-8 
                         lg:py-24 
                         xl:py-28"
-      
-    >
-
-      {/* <div 
-        className="relative top-0 left-0 w-full h-full z-12"
         style={{
           backgroundImage: `url(${adng})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.1,
-        }}>
 
-      </div> */}
+        }}
+    >
+
+
+
       <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col">
         
         <h2 className="text-[#1F3D3D] text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12
-                       text-[1.2rem] 
+                       text-[0.9rem] 
                        sm:text-3xl 
                        md:text-4xl 
                        lg:text-5xl 
