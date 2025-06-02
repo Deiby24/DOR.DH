@@ -8,7 +8,7 @@ export const AdvantagesSection = () => {
 <div className="absolute right-0 top-0 w-full h-full pointer-events-none">
   <img
     src={CELULA}
-    className="absolute -right-64 sm:-right-56 md:-right-48 lg:-right-40 -top-30 sm:-top-34 md:-top-42 lg:-top-50 w-[48rem] sm:w-[52rem] md:w-[56rem] lg:w-[60rem] xl:w-[64rem] h-[53rem] sm:h-[57rem] md:h-[61rem] lg:h-[66rem] xl:h-[69rem] opacity-20"
+    className="absolute -right-64 sm:-right-56 md:-right-48 lg:-right-40 -top-30 sm:-top-34 md:-top-42 lg:-top-70 w-[48rem] sm:w-[52rem] md:w-[56rem] lg:w-[60rem] xl:w-[64rem] h-[53rem] sm:h-[57rem] md:h-[61rem] lg:h-[66rem] xl:h-[69rem] opacity-20"
     alt="Celula decorative element"
   />
 </div>
@@ -25,9 +25,9 @@ export const AdvantagesSection = () => {
         </h2>
 
         {/* Three cards - Responsive grid and spacing */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8 max-w-10xl mx-auto">
           {/* Facilities Card */}
-          <div className="bg-[#F5FCF6]/60 rounded-lg  p-6 sm:p-8 md:p-8 lg:p-10 text-center md:col-span-2 lg:col-span-1">
+          <div className="bg-[#F5FCF6]/60 rounded-lg px-8 sm:px-8 md:px-8 lg:px-10 py-1 sm:py-1 md:py-1 lg:py-1 text-center md:col-span-2 lg:col-span-1">
             <h3 className="text-[#33585E] text-3xl sm:text-5xl md:text-3xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
                                           style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
@@ -53,7 +53,7 @@ export const AdvantagesSection = () => {
           </div>
 
           {/* Medical Team Card */}
-          <div className="bg-[#F5FCF6]/60 rounded-lg  p-6 sm:p-8 md:p-8 lg:p-10 text-center">
+          <div className="bg-[#F5FCF6]/60 rounded-lg px-8 sm:px-8 md:px-8 lg:px-10 py-1 sm:py-1 md:py-1 lg:py-1 text-center">
             <h3 className="text-[#33585E] text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
                                               style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',
@@ -77,7 +77,7 @@ export const AdvantagesSection = () => {
           </div>
 
           {/* Access to Advanced Therapies Card */}
-          <div className="bg-[#F5FCF6]/60 rounded-lg  p-6 sm:p-8 md:p-8 lg:p-10 text-center">
+          <div className="bg-[#F5FCF6]/60 rounded-lg px-8 sm:px-8 md:px-8 lg:px-10 py-1 sm:py-1 md:py-1 lg:py-1 text-center">
             <h3 className="text-[#33585E] text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-serif  mb-4 sm:mb-5 md:mb-6 italic font-light"
                                               style={{
               fontFamily: 'Georgia, Times, "Times New Roman", serif',

@@ -17,7 +17,7 @@ export const DoctorCard = () => {
                 fontStyle: 'italic'
               }}
             >
-              Dr. Diego Hernández Z. M.D U.de.A.
+              Dr. Diego Hernández Z. M.D. U.de.A.
             </p>
           </div>
           <img
@@ -92,31 +92,31 @@ export const DoctorCard = () => {
           >
             Studies at:
           </h4>
-          <ul className="text-gray-700 space-y-2 md:space-y-3 text-sm md:text-[15px]" 
+<ul className="text-gray-700 space-y-2 md:space-y-3 text-base md:text-lg" 
               style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>Integrated Center for Biological Medicine (CIMEBI)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.0] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>Integrated Center for Biological Medicine (CIMEBI)</span>
             </li>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>Colombian Scientific Association of Aesthetic (ACICME)<br />(Aesthetic Medicine)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>Colombian Scientific Association of Aesthetic Medicine (ACICME)<br />(Aesthetic Medicine)</span>
             </li>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>Regional Corporation of Higher Education (CRES)<br />(Ozone Therapy)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>Regional Corporation of Higher Education (CRES)<br />(Ozone Therapy)</span>
             </li>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>University Foundation of Health Sciences (FUCS)<br />(Integrative and Functional Medicine)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>University Foundation of Health Sciences (FUCS)<br />(Integrative and Functional Medicine)</span>
             </li>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>University Foundation of Health Sciences (FUCS)<br />(Seminar on regenerative medicine and use of biological medications)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>University Foundation of Health Sciences (FUCS)<br />(Seminar on regenerative medicine and use of biological medications)</span>
             </li>
             <li className="flex items-baseline gap-2">
-              <span className="text-green-800 text-xl md:text-2xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
-              <span className='text-base md:text-xl text-800'>The Bosque University<br />(Homotoxicology)</span>
+              <span className="text-[#09454A] text-2xl md:text-3xl pt-[2px] leading-[1.2] flex-shrink-0">•</span>
+              <span className='text-lg md:text-xl text-gray-800'>The Bosque University<br />(Homotoxicology)</span>
             </li>
           </ul>
         </div>

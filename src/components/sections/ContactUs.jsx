@@ -89,7 +89,7 @@ export const ContactUs = () => {
             for you
           </h2>
           <p 
-            className="text-2xl mb-6 text-center"
+            className="text-[1.3rem] md:text-2xl  mb-6 text-center"
             style={{ 
               color: '#3B5959',
               fontFamily: 'Georgia, serif'
@@ -101,7 +101,7 @@ export const ContactUs = () => {
             appointment.
           </p>
           <p 
-            className="text-2xl text-center"
+            className="text-[1.3rem] md:text-2xl text-center"
             style={{ 
               color: '#3B5959',
               fontFamily: 'Georgia, serif'

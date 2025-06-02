@@ -68,7 +68,7 @@ const Navbar = () => {
 
         {/* Menu Items - Ligeramente más compacto */}
         <div 
-          className="flex gap-1.5 flex-wrap justify-center bg-white/85 shadow-lg px-5 py-3 rounded-3xl"
+          className="flex gap-1.5 flex-wrap justify-center bg-white/85 shadow-lg xl:px-8 xl:py-5 lg:px-3 lg:py-5 rounded-xl"
           style={{   
             fontFamily: 'Georgia, Times, "Times New Roman", serif',
             fontWeight: 500, 
@@ -80,7 +80,7 @@ const Navbar = () => {
             <button
               key={i}
               onClick={() => scrollToSection(item.id)}
-              className={`px-2.5 py-1.5 rounded-md text-white 2xl:text-base xl:text-base lg:text-base   cursor-pointer ${
+              className={`ml-3 lg:px-5 lg:py-[.08] rounded-sm text-white 2xl:text-base xl:text-sm lg:text-[0.6rem] cursor-pointer ${
                 activeSection === item.id
                   ? 'bg-[#1F3D3D] font-bold'
                   : 'bg-[#5AA8A2] hover:bg-[#417F7C]'

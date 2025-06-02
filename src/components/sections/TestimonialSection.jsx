@@ -3,21 +3,22 @@ import { Star, Play } from "lucide-react";
 import Fondoimg from "../../assets/FORUM.svg";
 import CHRISTIANHELD from "../../assets/CHRISTIAN HELD.png";
 import Adriana from "../../assets/Adriana.png";
+import nelson from "../../assets/nelso.png";
 // Simulando el SVG de fondo para la demo
 
 export const TestimonialSection = () => {
   return (
     <div
       className="relative w-full bg-cover bg-center
-                 h-[300vh] min-h-[1200px]
-                 sm:h-[350vh] sm:min-h-[1100px]
-                 md:h-[400vh] md:min-h-[1000px]
+                 h-[220vh] min-h-[1200px]
+                 sm:h-[220vh] sm:min-h-[1100px]
+                 md:h-[250vh] md:min-h-[1000px]
                  lg:h-[140vh] lg:min-h-[1100px]
                  xl:h-[150vh] xl:min-h-[1200px]"
       
     >
 
-      <div className="absolute w-full h-full bg-cover bg-center opacity-70"
+      <div className="absolute w-full h-full bg-cover bg-center opacity-40"
         style={{
         backgroundImage: `url(${Fondoimg})`,
       }}
@@ -201,7 +202,7 @@ export const TestimonialSection = () => {
                               p-4 sm:p-4 md:p-6">
                 <div className="flex items-start mb-3 sm:mb-3 md:mb-4">
                   <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                    src={nelson}
                     alt="Jhon Bradley"
                     className="rounded-full object-cover mr-3 sm:mr-3 md:mr-4  
                                w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12"
@@ -209,8 +210,8 @@ export const TestimonialSection = () => {
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-1">
                       <h4 className="font-semibold text-gray-800
-                                     text-sm sm:text-sm md:text-base">
-                        Jhon Bradley
+                                     text-sm sm:text-sm md:text-base">                       
+                          Nelson Calderón
                       </h4>
                       <svg className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5" viewBox="0 0 24 24">
                         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -219,7 +220,7 @@ export const TestimonialSection = () => {
                         <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                       </svg>
                     </div>
-                    <p className="text-gray-500 text-xs sm:text-sm">18-03-2025</p>
+                    <p className="text-gray-500 text-xs sm:text-sm">2 weeks ago</p>
                   </div>
                 </div>
 
@@ -235,7 +236,7 @@ export const TestimonialSection = () => {
 
                 <p className="text-gray-700 leading-relaxed font-medium 
                               text-sm sm:text-sm">
-                  Dr. Diego is an incredible specialist. He's an expert in his treatments, and his office is equipped with the best equipment.
+                  Dr. Diego is a great professional. I recommend him without any doubt.
                 </p>
               </div>
 

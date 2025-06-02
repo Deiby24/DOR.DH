@@ -48,7 +48,7 @@ export const TreatmentsSection = () => {
             />
             <span className="leading-tight text-[#1F3D3D]" >What is Regenerative Medicine?</span>
             <div
-              className="rounded-full z-20 flex-shrink-0
+              className="ml-1 rounded-full z-20 flex-shrink-0
                         w-2 h-2 
                          sm:w-3 sm:h-3 
                          md:w-4 md:h-4 
@@ -79,30 +79,40 @@ export const TreatmentsSection = () => {
                         xl:gap-10
                         ">
           <TreatmentCard
-            title="Exosomes"
-            description="Exosome therapies for cell regeneration. Aesthetic, orthopedic, and neurological applications.
-            text-sm
-            "
+            title="Stem Cell Therapy"
+            description="Treatment of joints, sports injuries,
+neurodegenerative diseases,
+and rejuvenation."
           />
           <TreatmentCard
-            title="Stem Cell Therapy"
-            description="Treatment of joints, sports injuries, neurodegenerative diseases, and rejuvenation."
+            title="Exosomes"
+            description="Exosome therapies for cell regeneration.
+Aesthetic, orthopedic, and
+neurological applications."
           />
           <TreatmentCard
             title="Platelet-Rich Plasma (PRP)"
-            description="Aesthetic PRP (facial, hair). Orthopedic PRP for muscle and joint injuries."
+            description="Aesthetic PRP (facial, hair).
+Orthopedic PRP for muscle and joint injuries."
           />
           <TreatmentCard
             title="Ozone Therapy"
-            description="Serum Therapy • Hyperbaric Medicine"
+            description="Ten-pass.
+Major autohemotherapy.
+Local injections for pain and inflammation."
+          />
+          <TreatmentCard
+            title="Serum Therapy"
+            description="Personalized serums with vitamins,
+minerals, amino acids, and antioxidants.
+Focused on immunity, energy,
+anti-aging, and cellular recovery."
           />
           <TreatmentCard
             title="Hyperbaric Medicine"
-            description="Advanced oxygen therapy for enhanced healing and recovery treatments."
-          />
-          <TreatmentCard
-            title="Growth Factor Therapy"
-            description="Targeted biological treatments for tissue repair and regeneration processes."
+            description="State-of-the-art hyperbaric chambers.
+Improved tissue oxygenation, post-surgical recovery,
+chronic injuries, etc."
           />
         </div>
       </div>
