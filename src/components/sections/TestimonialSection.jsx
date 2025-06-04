@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Play } from "lucide-react";
+import { Star, Play, MapPin  } from "lucide-react";
 import Fondoimg from "../../assets/FORUM.svg";
 import CHRISTIANHELD from "../../assets/CHRISTIAN HELD.png";
 import Adriana from "../../assets/Adriana.png";
@@ -47,31 +47,59 @@ export const TestimonialSection = () => {
                             lg:flex-row lg:space-y-0 lg:space-x-8 xl:space-x-12">
               
               {/* Video */}
-              <div className="relative rounded-3xl overflow-hidden shadow-xl flex-shrink-0
-                              w-72 h-80
-                              sm:w-72 sm:h-88
-                              md:w-80 md:h-130"
-                   style={{ backgroundColor: "#D4A574" }}>
-                <img
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Doctora"
-                  className="w-full h-full object-cover"
-                />
+            < div
+  className="relative rounded-3xl overflow-hidden shadow-xl flex-shrink-0
+             w-72 h-80 sm:w-72 sm:h-88 md:w-80 md:h-130"
+  style={{ backgroundColor: "#D4A574" }}
+>
+  {/* Google Maps Embed */}
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5012989789875!2d-75.57413389999999!3d6.1973972999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468287f76f024f%3A0x5e9415e8a866e128!2sDR.%20DIEGO%20HERN%C3%81NDEZ%20Z.%20OZONOTERAPIA%2C%20TRATAMIENTOS%20HIPERBARICOS%2C%20COLONTERAPIA!5e0!3m2!1ses-419!2sco!4v1749050664883!5m2!1ses-419!2sco"
+    className="w-full h-full object-cover border-0"
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 
-                {/* Botón de YouTube */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-red-600 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-red-700 transition-colors
-                                  w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20">
-                    <Play className="text-white fill-white ml-1
-                                     w-6 h-6 sm:w-5 sm:h-5 md:w-8 md:h-8" />
-                  </div>
-                </div>
-              </div>
+  
+  
+
+  {/* Overlay que redirige al hacer clic */}
+  <div
+    className="absolute inset-0 z-10 cursor-pointer hover:bg-[#1F3D3D]/20"
+    onClick={() =>
+      window.open(
+        'https://www.google.com/maps/place/DR.+DIEGO+HERN%C3%81NDEZ+Z.+OZONOTERAPIA,+TRATAMIENTOS+HIPERBARICOS,+COLONTERAPIA/@6.1973973,-75.5741339,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468287f76f024f:0x5e9415e8a866e128!8m2!3d6.1973973!4d-75.5741339!16s%2Fg%2F11rg5qm7m5',
+        '_blank'
+      )
+    }
+  ></div>
+
+  {/* Botón de ubicación */}
+  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <div
+      className="bg-[#5AA8A2] rounded-full flex items-center justify-center shadow-lg hover:bg-[#1F3D3D] transition-colors pointer-events-auto cursor-pointer
+                 w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 z-20"
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open(
+          'https://www.google.com/maps/place/DR.+DIEGO+HERN%C3%81NDEZ+Z.+OZONOTERAPIA,+TRATAMIENTOS+HIPERBARICOS,+COLONTERAPIA/@6.1973973,-75.5741339,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468287f76f024f:0x5e9415e8a866e128!8m2!3d6.1973973!4d-75.5741339!16s%2Fg%2F11rg5qm7m5',
+          '_blank'
+        );
+      }}
+    >
+      <MapPin className="text-white w-6 h-6 sm:w-5 sm:h-5 md:w-8 md:h-8" />
+    </div>
+  </div>
+</div>
 
               {/* Rating de Google */}
               <div className="flex flex-col items-center space-y-6 sm:space-y-6 md:space-y-8 flex-1">
                 {/* Logo de Google */}
-                <a href='https://g.page/r/CSjhZqjoFZReEAE/review' target="blank" className="bg-white rounded-full flex items-center justify-center shadow-lg
+                <p className="text-gray-700 text-lg sm:text-lg md:text-xl font-semibold text-center">
+                  Click the logo to leave a review
+                </p>    
+                <a href='https://g.page/r/CSjhZqjoFZReEAE/review' target="blank" className="bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#999EA6] 
                                 w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24">
                   <svg className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12" viewBox="0 0 24 24">
                     <path
@@ -97,7 +125,7 @@ export const TestimonialSection = () => {
                 <div className="text-center">
                   <h3 className="font-bold text-gray-800 mb-4 sm:mb-4 md:mb-6
                                  text-2xl sm:text-2xl md:text-3xl">
-                    EXCELENTE
+                    EXCELLENT
                   </h3>
 
                   {/* Estrellas */}
@@ -113,7 +141,7 @@ export const TestimonialSection = () => {
 
                   <p className="text-gray-600 mb-4 sm:mb-4 md:mb-6
                                 text-base sm:text-base md:text-xl">
-                    Basado en <span className="font-semibold">39 reseñas</span>
+                    Based on <span className="font-semibold">39 reviews</span>
                   </p>
 
                   {/* Google logo pequeño */}

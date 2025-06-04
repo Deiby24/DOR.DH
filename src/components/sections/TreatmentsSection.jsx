@@ -10,9 +10,14 @@ export const TreatmentsSection = () => {
                         lg:py-24 
                         xl:py-28"
         style={{
-          backgroundImage: `url(${adng})`,
-          backgroundSize: 'cover',
-          backgroundPosition:'top'
+           background: `linear-gradient(to bottom, 
+        rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,0.1) 80%, 
+        rgba(255,255,255,0.9) 100%), 
+        url(${adng})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 40%',
+        backgroundRepeat: 'no-repeat'
         }}
     >
       <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col">

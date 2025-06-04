@@ -32,9 +32,15 @@ export const BenefictsSection = () => {
                         xl:py-24">
       
       <div 
-        className="absolute inset-0 opacity-40 bg-cover bg-center"
+        className="absolute inset-0 opacity-40 "
         style={{
-          backgroundImage: `url(${Fondo})`,
+           background: `linear-gradient(to bottom, 
+        rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,0.1) 80%, 
+        rgba(255,255,255,0.9) 100%), 
+        url(${Fondo})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       />
       
