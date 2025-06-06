@@ -61,6 +61,7 @@ export const Hero = () => {
       </p>
 
       {/* Color Circles */}
+      <div className="flex items-center justify-center  ">
       <div className="flex gap-2 sm:gap-3 md:gap-4 mt-4 sm:mt-6 py-6 sm:py-8 md:py-10 lg:py-12">
         {['#8ED2C8','#6EBFB9', '#6DA8B1', '#518E91', '#387979', '#33585E'].map(
           (color, i) => (
@@ -70,11 +71,39 @@ export const Hero = () => {
                          w-6 h-6 
                          sm:w-8 sm:h-8 
                          md:w-10 md:h-10 
-                         lg:w-12 lg:h-12"
-              style={{ backgroundColor: color }}
+                         lg:w-12 lg:h-12
+                         animate-bounce"
+              style={{ 
+                backgroundColor: color,
+                animationDelay: `${i * 0.1}s`,
+                animationDuration: '1s'
+              }}
             />
           )
         )}
+      </div>
+       <style jsx>{`
+        @keyframes wave {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+        }
+        
+        @keyframes fadeInUp {
+          0% { 
+            opacity: 0; 
+            transform: translateY(20px); 
+          }
+          100% { 
+            opacity: 1; 
+            transform: translateY(0); 
+          }
+        }
+      `}</style>
       </div>
 
       {/* Background image */}

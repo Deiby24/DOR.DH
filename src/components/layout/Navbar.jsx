@@ -63,7 +63,7 @@ const Navbar = () => {
       <nav className="hidden lg:flex w-full items-center py-2.5 z-50 fixed top-0 left-0 justify-around">
         {/* Logo */}
         <div className="flex items-center gap-3 pl-12 md:pl-0 lg:pl 12 xl:pl-12">
-          <img src={LOGOSITIO} alt="Logo" className="h-24" />
+          <img src={LOGOSITIO} alt="Logo" className="h-32 relative" />
         </div>
 
         {/* Menu Items - Ligeramente más compacto */}
@@ -96,7 +96,7 @@ const Navbar = () => {
       <nav className="lg:hidden w-full flex items-center justify-between px-4 py-3 z-50 fixed top-0 left-0 bg-white shadow-md">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={LOGOSITIO} alt="Logo" className="h-15 w-20 absolute" />
+          <img src={LOGOSITIO} alt="Logo" className="h-24 w-20 absolute" />
         </div>
 
         {/* Mobile Menu Button */}

@@ -1,26 +1,24 @@
 import TreatmentCard from './TreatmentsCards';
-import adng from '../../assets/ADN.svg';
+import adng from '../../assets/ADN.mp4';
 
 export const TreatmentsSection = () => {
   return (
-    <section className="bg-white w-full flex flex-col items-center justify-center z-10
+    <section className="bg-white w-full flex flex-col items-center justify-center z-2 relative overflow-hidden
                         py-12 px-10 
                         sm:py-16 sm:px-6 
                         md:py-20 md:px-8 
                         lg:py-24 
                         xl:py-28"
-        style={{
-           background: `linear-gradient(to bottom, 
-        rgba(255,255,255,0) 0%, 
-        rgba(255,255,255,0.1) 80%, 
-        rgba(255,255,255,0.9) 100%), 
-        url(${adng})`,
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 40%',
-        backgroundRepeat: 'no-repeat'
-        }}
     >
-      <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col">
+      <video
+        className="absolute  top-0 left-0 w-full h-full object-cover z-1 opacity-20"
+        src={adng}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="lg:max-w-7xl xl:max-w-7xl  md:max-w-3xl w-full justify-center items-center flex flex-col z-2 relative">
         
         <h2 className="text-[#1F3D3D] text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12
                        text-[0.9rem] 
