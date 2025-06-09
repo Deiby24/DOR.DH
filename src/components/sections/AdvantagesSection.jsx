@@ -8,7 +8,7 @@ export const AdvantagesSection = () => {
 <div className="absolute right-0 top-0 w-full h-full pointer-events-none">
   <img
     src={CELULA}
-    className="absolute -right-64 sm:-right-56 md:-right-48 lg:-right-40 -top-30 sm:-top-34 md:-top-42 lg:-top-70 w-[48rem] sm:w-[52rem] md:w-[56rem] lg:w-[60rem] xl:w-[64rem] h-[53rem] sm:h-[57rem] md:h-[61rem] lg:h-[66rem] xl:h-[69rem] opacity-20"
+    className="absolute -right-10 sm:-right-56 md:-right-48 lg:-right-40 -top-30 sm:-top-34 md:-top-42 lg:-top-70 w-[48rem] sm:w-[52rem] md:w-[56rem] lg:w-[60rem] xl:w-[64rem] h-[53rem] sm:h-[57rem] md:h-[61rem] lg:h-[66rem] xl:h-[69rem] opacity-20"
     alt="Celula decorative element"
   />
 </div>

@@ -68,7 +68,7 @@ export const Hero = () => {
             <span
               key={i}
               className="rounded-full
-                         w-6 h-6 
+                         w-4 h-4 
                          sm:w-8 sm:h-8 
                          md:w-10 md:h-10 
                          lg:w-12 lg:h-12
@@ -111,7 +111,7 @@ export const Hero = () => {
         src={CELULAMADRE}
         alt="background blur"
         className="absolute pointer-events-none opacity-20 z-10
-                   w-[40%] -left-[15%] -bottom-[18%]
+                   w-[50%] -left-[15%] -bottom-[18%]
                    sm:w-[40%] sm:-left-[12%] sm:-bottom-[15%]
                    md:w-[42%] md:-left-[11%] md:-bottom-[22%]
                    lg:w-[37%] lg:-left-[10%] lg:-bottom-[20%]

@@ -24,7 +24,7 @@ export const BenefictsSection = () => {
   const circleColors = ["#85CBC1", "#62B5AC", "#61A2A7", "#488586", "#38737A", "#32555F"];
 
   return (
-    <section className="relative min-h-screen bg-white 
+    <section className="relative min-h-screen  z-1
                         py-8 px-10
                         sm:py-12 sm:px-6
                         md:py-16 md:px-8
@@ -32,12 +32,9 @@ export const BenefictsSection = () => {
                         xl:py-24">
       
       <div 
-        className="absolute inset-0 opacity-60 "
+        className="absolute inset-0 opacity-60 z-1 bg-contain md:bg-cover md:bg-center md:bg-no-repeat"
         style={{
            background: `url(${Fondo})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
     maskImage: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
         }}

@@ -93,10 +93,10 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar - Estilo simple como en la imagen */}
-      <nav className="lg:hidden w-full flex items-center justify-between px-4 py-3 z-50 fixed top-0 left-0 bg-white shadow-md">
+      <nav className="lg:hidden w-full flex items-center justify-between px-4 py-6 z-50 fixed top-0 left-0 bg-white shadow-md">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={LOGOSITIO} alt="Logo" className="h-24 w-20 absolute" />
+          <img src={LOGOSITIO} alt="Logo" className="h-30 w-30 absolute" />
         </div>
 
         {/* Mobile Menu Button */}
