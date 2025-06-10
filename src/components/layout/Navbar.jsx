@@ -63,12 +63,12 @@ const Navbar = () => {
       <nav className="hidden lg:flex w-full items-center py-2.5 z-50 fixed top-0 left-0 justify-around">
         {/* Logo */}
         <div className="flex items-center gap-3 pl-12 md:pl-0 lg:pl 12 xl:pl-12">
-          <img src={LOGOSITIO} alt="Logo" className="h-32 relative" />
+          <img src={LOGOSITIO} alt="Logo" className="h-38 relative" />
         </div>
 
         {/* Menu Items - Ligeramente más compacto */}
         <div 
-          className="flex gap-1.5 flex-wrap justify-center bg-white/85 shadow-lg xl:px-8 xl:py-5 lg:px-3 lg:py-5 rounded-xl"
+          className="flex gap-1.5 flex-wrap justify-center bg-white/85 shadow-lg xl:px-4 xl:py-5 lg:px-3 lg:py-5 rounded-xl"
           style={{   
             fontFamily: 'Georgia, Times, "Times New Roman", serif',
             fontWeight: 500, 
