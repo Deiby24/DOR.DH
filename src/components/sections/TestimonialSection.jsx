@@ -9,8 +9,8 @@ export const TestimonialSection = () => {
   return (
     <div
       className="relative w-full bg-cover bg-center
-                 h-[220vh] min-h-[1300px]
-                 sm:h-[220vh] sm:min-h-[1250px]
+                 h-[220vh] min-h-[1450px]
+                 sm:h-[220vh] sm:min-h-[1300px]
                  md:h-[250vh] md:min-h-[1450px]
                  lg:h-[140vh] lg:min-h-[1100px]
                  xl:h-[150vh] xl:min-h-[1200px]"
