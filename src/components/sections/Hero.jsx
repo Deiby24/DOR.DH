@@ -8,8 +8,6 @@ export const Hero = () => {
                         md:pt-48  
                         lg:pt-50 
                         xl:pt-55 ">
-      
-      {/* Main Headings */}
       <h1 className="font-extrabold text-[#1F3D3D]
                      text-[2.0rem] 
                      sm:text-5xl 
@@ -41,8 +39,6 @@ export const Hero = () => {
           }}>
         of the future
       </h2>
-
-      {/* Description */}
       <p className="italic text-[#5DA9A6] mt-4 max-w-[18rem] sm:max-w-[30rem] md:max-w-[33rem] lg:max-w-[45rem] xl:max-w-[45rem] 2xl:max-w-4xl
                     text-[0.6rem]
                     sm:text-base 
@@ -59,8 +55,6 @@ export const Hero = () => {
         Innovative treatments that promote natural tissue regeneration and relieve
         pain effectively and safely.
       </p>
-
-      {/* Color Circles */}
       <div className="flex items-center justify-center  ">
       <div className="flex gap-2 sm:gap-3 md:gap-4 mt-4 sm:mt-6 py-6 sm:py-8 md:py-10 lg:py-12">
         {['#8ED2C8','#6EBFB9', '#6DA8B1', '#518E91', '#387979', '#33585E'].map(
@@ -105,8 +99,6 @@ export const Hero = () => {
         }
       `}</style>
       </div>
-
-      {/* Background image */}
       <img
         src={CELULAMADRE}
         alt="background blur"

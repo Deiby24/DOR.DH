@@ -23,13 +23,11 @@ export const TestimonialSection = () => {
       }}
 
       ></div>
-      {/* Gradientes */}
       <div className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent z-10
                       h-24 sm:h-32 md:h-40"></div>
       <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white to-transparent z-10
                       h-24 sm:h-32 md:h-40"></div>
 
-      {/* Contenido principal */}
       <div className="relative z-20 h-full flex items-center justify-center
                       px-4 sm:px-6 md:px-9 lg:px-12
                       py-16 sm:py-20 md:py-24 lg:py-28">
@@ -38,13 +36,11 @@ export const TestimonialSection = () => {
                         lg:grid-cols-8 lg:gap-6
                         items-stretch">
           
-          {/* Card principal - Solo Video */}
           <div className="bg-white/20 backdrop-blur-md rounded-3xl shadow-2xl border border-white/80
                           lg:col-span-4
                           p-6 sm:p-6 md:p-7 lg:p-8">
             <div className="flex flex-col items-center justify-center space-y-20 md:space-y-20 h-container">
               
-              {/* Mapa Interactivo Ampliado */}
               <div
                 className="relative rounded-3xl overflow-hidden shadow-xl flex-shrink-0 group cursor-pointer
                            w-full h-96 sm:w-full sm:h-[450px] md:w-full md:h-[500px] lg:h-[400px] xl:h-[450px]"
@@ -55,7 +51,6 @@ export const TestimonialSection = () => {
                   )
                 }
               >
-                {/* Imagen de fondo por defecto */}
                 <div 
                   className="absolute inset-0 w-full h-full bg-cover bg-left transition-all duration-500 ease-in-out
                              group-hover:scale-110 group-hover:opacity-30"
@@ -64,7 +59,6 @@ export const TestimonialSection = () => {
                   }}
                 ></div>
 
-                {/* Google Maps Embed - Oculto por defecto, visible en hover */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5012989789875!2d-75.57413389999999!3d6.1973972999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468287f76f024f%3A0x5e9415e8a866e128!2sDR.%20DIEGO%20HERN%C3%81NDEZ%20Z.%20OZONOTERAPIA%2C%20TRATAMIENTOS%20HIPERBARICOS%2C%20COLONTERAPIA!5e0!3m2!1ses-419!2sco!4v1749050664883!5m2!1ses-419!2sco"
                   className="w-full h-full object-cover border-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
